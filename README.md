@@ -16,12 +16,7 @@ This repository provides a concise pipeline for detecting Atrial Fibrillation (A
    - **Transformer**: Utilizes multi-head self-attention to capture long-range dependencies in 1D ECG signals.  
    - **CNN**: Employs multiple convolutional blocks and pooling layers to learn local morphological features crucial for arrhythmia detection.
 
-3. **Training Utilities**  
-   - **Cross-Entropy Loss** for multi-class or binary classification.  
-   - **Adam/AdamW Optimizers** with learning rate schedulers (OneCycleLR or StepLR).  
-   - **Early Stopping**: Monitors validation performance to avoid overfitting.
-
-4. **Explainability via SHAP**  
+3. **Explainability via SHAP**  
    - **DeepExplainer** for computing Shapley values from raw model logits.  
    - **Color-Coded Plots**: Visualize positive (red) or negative (blue) SHAP attributions per time sample on the ECG waveform.  
    - **Group and Save**: Automatically groups samples by predicted and true class, saving plots in a designated folder.
